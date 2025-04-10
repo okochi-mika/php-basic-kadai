@@ -40,14 +40,14 @@ class Animal {
 
 <?php
 // Foodインスタンスを作成
-$food = new Food();
+$food = new Food("Pizza", 1000);
 
 // Animalインスタンスを作成
-$animal = new Animal();
+$animal = new Animal("Lion", 120, 200);
 
 // インスタンスを出力する
-echo "Food: " . $food->show_price(); // Foodクラスのpriceを出力
-echo "Animal: " . $animal->show_height(); // Animalクラスのheightを出力
+echo "Food: " . $food->show_price() . "\n"; // Foodクラスのpriceを出力
+echo "Animal: " . $animal->show_height() . "\n"; // Animalクラスのheightを出力
 
 // print_rを使ってインスタンスのプロパティを表示
 echo "\nFood Object: ";
